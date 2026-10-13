@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>JN COLLECTION — Watches & Fragrances</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Archivo:wght@500;800&display=swap">
+<style>
+:root{--bg:#f6f3ec;--ink:#0b0b0c;--mut:#6d6a63;--line:#d9d4c8;--gold:#b89b5e;--dk:#0b0b0c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:300 15px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.big{font-family:Archivo,Impact,sans-serif;font-weight:800;letter-spacing:-.04em;line-height:.88;text-transform:uppercase}
+button,input,select{font:inherit;color:inherit}button{cursor:pointer;background:none;border:0}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 4vw;font-size:12px;letter-spacing:.14em;text-transform:uppercase;transition:.4s}
+nav.s{background:#f6f3ecb8;backdrop-filter:blur(14px);padding:12px 4vw}
+nav b{font-family:Archivo;font-weight:800;letter-spacing:.08em;font-size:15px}nav div{display:flex;gap:26px}nav a,nav button{text-decoration:none;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.links{display:flex}@media(max-width:800px){.links{display:none}}
+.dk{background:var(--dk);color:#efeadd}
+section{position:relative;padding:14vh 4vw}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding-bottom:6vh}
+.hero h1{font-size:clamp(76px,21vw,330px);position:relative;z-index:1;margin-left:-.04em;will-change:transform}
+.hero .tag{font-family:Archivo;font-weight:800;font-size:clamp(14px,2vw,26px);letter-spacing:.02em;margin:3vh 0 1vh;position:relative;z-index:2}
+.hero p{max-width:380px;color:var(--mut);position:relative;z-index:2}
+.hw{position:absolute;right:5vw;top:14vh;width:min(46vw,520px);z-index:3;perspective:900px}
+.hw svg{width:100%;transform:rotateY(calc(var(--sy,0)*1deg)) rotateX(6deg) translateZ(0);animation:fl 6s ease-in-out infinite;filter:drop-shadow(0 40px 40px #0004)}
+@keyframes fl{50%{translate:0 -14px}}
+@media(max-width:800px){.hw{width:70vw;top:12vh;right:15vw}}
+.scr{position:absolute;left:4vw;bottom:3vh;font-size:11px;letter-spacing:.2em;display:none}
+.rv{opacity:0;transform:translateY(50px);transition:1s cubic-bezier(.2,.7,.1,1)}.rv.in{opacity:1;transform:none}
+.intro h2{font-size:clamp(60px,15vw,240px)}.intro p{max-width:420px;margin:6vh 0 0 auto;color:var(--mut)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:6vh;gap:20px;flex-wrap:wrap}
+.head h2{font-size:clamp(44px,9vw,150px)}
+.show{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:3vw;align-items:center}
+@media(max-width:800px){.show{grid-template-columns:1fr}}
+.stage{perspective:1000px}.stage svg{width:100%;transition:transform .15s,opacity .4s}
+.spec{border-top:1px solid var(--line);padding:12px 0;font-size:12px;letter-spacing:.1em;display:flex;justify-content:space-between}.spec small{color:var(--mut)}
+.dots{display:flex;gap:10px;margin:18px 0}.dot{width:26px;height:26px;border-radius:50%;border:1px solid var(--mut);outline-offset:3px}.dot.on{outline:1px solid currentColor}
+.rail{display:flex;gap:2vw;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.item{flex:0 0 min(78vw,420px);scroll-snap-align:start}.item .im{aspect-ratio:4/5;display:grid;place-items:center;background:#ebe6d9;overflow:hidden;cursor:pointer;position:relative}
+.dk .item .im{background:#17171a}.item .im svg{width:78%;transition:transform .8s cubic-bezier(.2,.7,.1,1)}.item:hover .im svg{transform:scale(1.07) rotate(-3deg)}
+.item h3{font-size:30px;margin:16px 0 6px}.item p{color:var(--mut);font-size:13px}.pr{font-family:Archivo;font-weight:500;margin:8px 0}.pr s{color:var(--mut);margin-right:8px}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.b{border:1px solid currentColor;padding:11px 20px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;transition:.3s}.b:hover,.b.f{background:var(--ink);color:var(--bg)}.dk .b:hover,.dk .b.f{background:#efeadd;color:#000}
+.b.w{border-color:#25a244;color:#25a244}.wl{position:absolute;top:12px;right:12px;font-size:20px;z-index:2}
+.notes{font-size:12px;color:var(--mut);margin:6px 0}.notes b{color:inherit;font-weight:500;letter-spacing:.1em}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px;align-items:center}.chip{padding:8px 16px;border:1px solid var(--line);font-size:11px;letter-spacing:.14em;text-transform:uppercase}.chip.on{background:var(--ink);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:30px 20px}.grid .item h3{font-size:20px}
+select,input[type=text],input[type=email],input[type=tel],input[type=search]{background:transparent;border:0;border-bottom:1px solid var(--mut);padding:10px 0;width:100%;outline:0}
+.st h2{font-size:clamp(50px,13vw,220px);text-align:left}.st{text-align:left;overflow:hidden}
+.tg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2vw}.tg div{border-top:1px solid var(--line);padding-top:20px;font-size:18px}.tg small{display:block;color:var(--mut);margin-top:14px;font-size:11px}
+footer{padding:10vh 4vw 5vh}footer h2{font-size:clamp(50px,14vw,230px)}footer .fl{display:flex;flex-wrap:wrap;gap:12px 28px;margin:5vh 0;font-size:11px;letter-spacing:.16em;text-transform:uppercase}footer a{text-decoration:none}
+.ov{position:fixed;inset:0;z-index:80;background:var(--bg);overflow:auto;padding:80px 4vw 40px;opacity:0;pointer-events:none;transition:.5s;transform:translateY(20px)}.ov.on{opacity:1;pointer-events:auto;transform:none}
+.x{position:fixed;top:calc(18px + env(safe-area-inset-top,0px));right:4vw;font-size:12px;letter-spacing:.16em;z-index:90}
+.drawer{position:fixed;top:0;bottom:0;right:0;width:min(440px,100%);background:var(--bg);z-index:85;padding:70px 28px 28px;transform:translateX(100%);transition:.5s cubic-bezier(.2,.7,.1,1);overflow:auto;box-shadow:-20px 0 60px #0003}.drawer.on{transform:none}
+.ci{display:grid;grid-template-columns:70px 1fr auto;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}.ci svg{width:70px;background:#ebe6d9}
+.q button{width:24px;border:1px solid var(--line)}
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:5vw}@media(max-width:800px){.pd{grid-template-columns:1fr}}
+.pd .im{background:#ebe6d9;display:grid;place-items:center;padding:6%}.pd h2{font-size:clamp(36px,6vw,80px);margin-bottom:12px}
+.big input{font-size:clamp(30px,7vw,100px);font-family:Archivo;font-weight:800;text-transform:uppercase;border-bottom:2px solid}
+.fm{display:grid;gap:18px;max-width:560px}.fm label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:12px}td,th{border-bottom:1px solid var(--line);padding:6px;text-align:left}td input{width:100%;min-width:60px;padding:4px}
+.toast{position:fixed;bottom:24px;left:50%;translate:-50% 0;background:var(--ink);color:var(--bg);padding:12px 24px;font-size:12px;letter-spacing:.1em;z-index:200;opacity:0;transition:.4s;pointer-events:none}.toast.on{opacity:1}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<nav id="nav"><b>JN COLLECTION</b><div class="links"><a href="#shop">Shop</a><a href="#watches">Watches</a><a href="#perfumes">Perfumes</a><a href="#about">About</a><a href="#contact">Contact</a></div><div><button onclick="op('search')">Search</button><button onclick="Wl()">Wishlist <span id="wc">0</span></button><button onclick="cart(1)">Cart <span id="cc">0</span></button></div></nav>
+
+<section class="hero"><div class="hw" id="hw"></div><h1 id="h1">JN<br>COLLECTION</h1><div class="tag">TIMELESS OBJECTS.<br>SIGNATURE SCENTS.</div><p>A curated collection of watches and fragrances designed for those who appreciate detail.</p></section>
+
+<section class="intro"><h2 class="rv">Time.<br>Style.<br>Identity.</h2><p class="rv">JN Collection brings together carefully selected watches and fragrances for modern individuals who value timeless design, refined details and distinctive character.</p></section>
+
+<section id="watches"><div class="head"><h2 class="rv">The Watch<br>Collection</h2></div>
+<div class="show"><div id="wspec"></div><div class="stage" id="wstage"></div><div id="winfo"></div></div></section>
+
+<section><div class="head"><h2 class="rv">JN Watches</h2><small>Swipe →</small></div><div class="rail" id="wrail"></div></section>
+
+<section class="dk" id="perfumes"><div class="head"><h2 class="rv">The Scent<br>Collection</h2><small>Swipe →</small></div><div class="rail" id="prail"></div></section>
+
+<section id="shop"><div class="head"><h2 class="rv">Curated<br>For You</h2></div>
+<div class="bar" id="chips"></div>
+<div class="bar"><select id="sort" style="width:auto"><option value="">Sort: Featured</option><option value="pa">Price ↑</option><option value="pd">Price ↓</option><option value="n">Newest</option></select><label>Max PKR <span id="mpv"></span> <input type="range" id="mp" min="5000" max="60000" step="1000" value="60000"></label></div>
+<div class="grid" id="grid"></div></section>
+
+<section class="dk st"><h2 class="rv">Your time.<br>Your scent.<br>Your signature.</h2></section>
+
+<section id="about"><div class="head"><h2 class="rv">The JN<br>Collection</h2></div><p class="rv" style="max-width:520px;font-size:20px">JN Collection is built around a simple idea: exceptional objects do not need to be loud.<br><br><span style="color:var(--mut);font-size:15px">From precision watches to distinctive fragrances, every piece is selected to complement personal style, presence and individuality.</span></p></section>
+
+<section><div class="head"><h2 class="rv">The JN<br>Experience</h2><small>Sample copy — replace with real customer reviews.</small></div><div class="tg" id="tg"></div></section>
+
+<section class="dk" id="contact"><h2 class="big rv" style="font-size:clamp(36px,8vw,120px)">Stay in the<br>Collection</h2><p style="margin:3vh 0;max-width:420px;color:#aaa">Be the first to discover new watches, fragrances and exclusive releases.</p><form class="fm" onsubmit="event.preventDefault();toast('Welcome to JN COLLECTION');this.reset()"><input type="email" required placeholder="YOUR EMAIL"><button class="b" style="width:fit-content">Join JN</button></form></section>
+
+<footer class="dk"><h2>JN<br>Collection</h2><div class="fl"><a href="#watches">Watches</a><a href="#perfumes">Perfumes</a><a href="#shop" onclick="F('new')">New Arrivals</a><a href="#shop" onclick="F('best')">Best Sellers</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div><div class="fl"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a><a href="#" onclick="wa()">WhatsApp</a></div><small>© 2026 JN Collection. All rights reserved.</small></footer>
+
+<div class="ov" id="search"><button class="x" onclick="cl()">CLOSE ✕</button><small>SEARCH JN COLLECTION</small><div class="big"><input type="search" id="sq" placeholder="Type to search" oninput="S()"></div><div class="grid" id="sr" style="margin-top:40px"></div></div>
+<div class="ov" id="pd"><button class="x" onclick="cl()">CLOSE ✕</button><div id="pdc"></div></div>
+<div class="ov" id="co"><button class="x" onclick="cl()">CLOSE ✕</button><h2 style="font-size:clamp(40px,8vw,100px);margin-bottom:30px">Checkout</h2><div id="coc"></div></div>
+<div class="ov" id="ad"><button class="x" onclick="cl()">CLOSE ✕</button><h2 style="font-size:50px;margin-bottom:20px">Admin</h2><div id="adc" style="overflow:auto"></div></div>
+<div class="drawer" id="dr"><button class="x" style="position:absolute" onclick="cart(0)">CLOSE ✕</button><div id="drc"></div></div>
+<div class="toast" id="t"></div>
+
+<script>
+/* ===== CONFIG (edit here) ===== */
+const CFG={brand:"JN COLLECTION",whatsapp:"923000000000",currency:"PKR",adminPass:"change-me",
+ // payment methods are modular: add/remove here, connect gateways later
+ payments:["Cash on Delivery","Bank Transfer","JazzCash","EasyPaisa","Card Payment (coming soon)"]};
+/* ===== PRODUCT DATABASE =====
+Edit here or via #admin. Fields: id,name,category(watches|perfumes),gender(men|women|unisex),description,price,salePrice,
+images (placeholder art is used if empty),colors,colorDelta,sizes,stock,rating,featured,bestSeller,newArrival,specifications,fragranceNotes,createdAt */
+const W=(id,name,desc,price,sale,colors,f,b,n,g="men")=>({id,name,category:"watches",gender:g,description:desc,price,salePrice:sale,images:[],colors,colorDelta:{Gold:2000,"Rose Gold":2500},sizes:["40 mm"],stock:12,rating:0,featured:f,bestSeller:b,newArrival:n,specifications:{Case:"40 mm",Movement:"Quartz / Automatic",Material:"Stainless Steel","Water Resistance":"5 ATM",Strap:"Stainless Steel",Glass:"Mineral crystal"},fragranceNotes:null,createdAt:"2026-09-"+(10+id%15)});
+const P=(id,name,type,desc,price,sale,top,heart,base,f,b,n,g="unisex")=>({id,name,category:"perfumes",gender:g,description:desc,price,salePrice:sale,images:[],colors:["Amber"],colorDelta:{},sizes:["50 ml"],stock:20,rating:0,featured:f,bestSeller:b,newArrival:n,specifications:{Type:type,Size:"50 ml",Longevity:"6–8 hrs"},fragranceNotes:{top,heart,base},createdAt:"2026-09-"+(5+id%20)});
+const DEF=[
+W(1,"JN Chronograph Silver","Precision meets contemporary elegance.",24999,0,["Silver","Black","Gold","Rose Gold"],1,1,0),
+W(2,"JN Chronograph Black","Dark dial, quiet confidence.",25999,0,["Black","Silver"],1,0,1),
+W(3,"JN Classic Gold","A timeless dress watch.",27999,0,["Gold","Silver"],1,1,0),
+W(4,"JN Rose Gold","Warm metal, refined proportions.",28999,0,["Rose Gold","Gold"],0,1,1,"women"),
+W(5,"JN Executive Black","Understated for the boardroom.",26999,0,["Black","Silver"],0,0,1),
+W(6,"JN Signature Silver","The house signature.",23999,21999,["Silver","Black"],1,1,0,"unisex"),
+P(11,"JN Signature","Eau de Parfum","A refined fragrance created for a distinctive presence.",8999,0,"Bergamot · Pink Pepper","Iris · Jasmine","Cedar · Musk",1,1,0),
+P(12,"JN Noir","Eau de Parfum","Dark, leathery, composed.",9499,0,"Bergamot · Black Pepper","Leather · Lavender","Amber · Oud · Musk",1,1,1,"men"),
+P(13,"JN Royal","Eau de Parfum","Regal woods and spice.",9999,0,"Cardamom · Citrus","Rose · Saffron","Sandalwood · Vanilla",0,0,1),
+P(14,"JN Oud","Parfum","Smoky resin and warm wood.",10999,0,"Saffron","Oud · Patchouli","Amber · Leather",1,1,0),
+P(15,"JN Elite","Eau de Parfum","Clean, sharp, modern.",8499,7999,"Grapefruit · Mint","Geranium","Vetiver · Musk",0,0,0,"men"),
+P(16,"JN Amber","Eau de Parfum","Soft, glowing amber.",9299,0,"Mandarin","Amber · Tonka","Vanilla · Benzoin",0,1,0),
+P(17,"JN Femme","Eau de Parfum","Floral, luminous, elegant.",9199,0,"Pear · Peony","Jasmine · Rose","White Musk · Cedar",1,0,1,"women"),
+P(18,"JN Intense","Parfum","Deep, long-lasting intensity.",11499,0,"Bergamot","Incense · Cinnamon","Oud · Amber",0,0,0)];
+let PR=load("jn_p",DEF),CT=load("jn_c",[]),WL=load("jn_w",[]),flt="all";
+function load(k,d){try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+const $=s=>document.querySelector(s),pid=id=>PR.find(p=>p.id==id);
+const fm=n=>CFG.currency+" "+Math.round(n).toLocaleString("en-US");
+const cur=(p,c)=>(p.salePrice||p.price)+((p.colorDelta||{})[c]||0);
+/* ===== PLACEHOLDER ART (replace with photography via the images field) ===== */
+const M={Silver:["#f4f4f4","#9a9ca0","#e9eaec"],Black:["#555","#0d0d0e","#1b1b1d"],Gold:["#f3dd9c","#a7852f","#f7efd5"],"Rose Gold":["#f2c9b8","#a8685a","#f8e8e1"],Amber:["#e0a64a","#6b3a0f","#f0d7a0"]};
+function art(p,c){if(p.images&&p.images[0])return`<img src="${p.images[0]}" loading="lazy" alt="${p.name}" style="width:100%">`;c=c||p.colors[0];const[a,b,d]=M[c]||M.Silver,u="g"+p.id+c.replace(/\W/g,"");
+if(p.category=="watches")return`<svg viewBox="0 0 300 420" role="img" aria-label="${p.name}"><defs><linearGradient id="${u}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset=".5" stop-color="${b}"/><stop offset="1" stop-color="${a}"/></linearGradient><radialGradient id="${u}d"><stop offset="0" stop-color="${d}"/><stop offset="1" stop-color="${c=="Black"?"#000":"#ddd"}"/></radialGradient></defs><rect x="105" y="0" width="90" height="420" fill="url(#${u})"/><g stroke="#0003">${Array.from({length:14},(_,i)=>`<line x1="105" x2="195" y1="${i*30+8}" y2="${i*30+8}"/>`).join("")}</g><circle cx="150" cy="210" r="118" fill="url(#${u})"/><circle cx="150" cy="210" r="102" fill="#0003"/><circle cx="150" cy="210" r="96" fill="url(#${u}d)"/>${Array.from({length:12},(_,i)=>`<line x1="150" y1="122" x2="150" y2="${i%3?130:134}" stroke="${c=="Black"?"#ccc":"#222"}" stroke-width="${i%3?2:3}" transform="rotate(${i*30} 150 210)"/>`).join("")}<text x="150" y="170" text-anchor="middle" font-size="11" letter-spacing="3" fill="${c=="Black"?"#ccc":"#222"}" font-family="Archivo">JN</text><line x1="150" y1="210" x2="150" y2="145" stroke="${c=="Black"?"#fff":"#111"}" stroke-width="3" transform="rotate(40 150 210)"/><line x1="150" y1="210" x2="150" y2="132" stroke="${c=="Black"?"#fff":"#111"}" stroke-width="2" transform="rotate(200 150 210)"/><circle cx="150" cy="210" r="4" fill="#b89b5e"/><path d="M70 150A100 100 0 0 1 200 100" stroke="#fff" stroke-opacity=".5" stroke-width="6" fill="none" stroke-linecap="round"/></svg>`;
+return`<svg viewBox="0 0 240 420" role="img" aria-label="${p.name}"><defs><linearGradient id="${u}" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".7"/><stop offset=".3" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></linearGradient><linearGradient id="${u}l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect x="100" y="20" width="40" height="50" fill="#222"/><rect x="95" y="60" width="50" height="22" fill="#b89b5e"/><rect x="40" y="82" width="160" height="320" rx="10" fill="url(#${u}l)"/><rect x="40" y="82" width="160" height="320" rx="10" fill="url(#${u})"/><rect x="70" y="190" width="100" height="110" fill="#fff" fill-opacity=".85"/><text x="120" y="232" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="16" fill="#111">JN</text><text x="120" y="252" text-anchor="middle" font-size="7" letter-spacing="2" fill="#111">${p.name.replace("JN ","").toUpperCase()}</text><text x="120" y="280" text-anchor="middle" font-size="6" fill="#555">50 ML</text></svg>`}
+/* ===== CARDS ===== */
+function card(p){const w=WL.includes(p.id);return`<div class="item rv"><div class="im" onclick="pdv(${p.id})"><button class="wl" aria-label="Wishlist" onclick="event.stopPropagation();tw(${p.id})">${w?"♥":"♡"}</button>${art(p)}</div><h3>${p.name.replace("JN ","JN<br>")}</h3><p>${p.description}</p>${p.fragranceNotes?`<div class="notes"><b>TOP</b> ${p.fragranceNotes.top}<br><b>HEART</b> ${p.fragranceNotes.heart}<br><b>BASE</b> ${p.fragranceNotes.base}</div>`:""}<div class="pr">${p.salePrice?`<s>${fm(p.price)}</s>`:""}${fm(p.salePrice||p.price)} · ${p.sizes[0]}</div>${p.stock?"":'<small>Sold out</small>'}<div class="btns"><button class="b f" onclick="add(${p.id})">Add to Cart</button><button class="b" onclick="add(${p.id},1)">Buy Now</button><button class="b" onclick="pdv(${p.id})">View</button></div></div>`}
+function R(){const wt=PR.filter(p=>p.category=="watches"),pf=PR.filter(p=>p.category=="perfumes");
+$("#wrail").innerHTML=wt.map(card).join("");$("#prail").innerHTML=pf.map(card).join("");G();hero();showcase();obs();
+$("#wc").textContent=WL.length;$("#cc").textContent=CT.reduce((a,c)=>a+c.q,0)}
+const CH=[["all","All"],["watches","Watches"],["perfumes","Perfumes"],["men","Men"],["women","Women"],["new","New Arrivals"],["best","Best Sellers"]];
+function F(k){flt=k;G()}
+function G(){$("#chips").innerHTML=CH.map(c=>`<button class="chip ${flt==c[0]?"on":""}" onclick="F('${c[0]}')">${c[1]}</button>`).join("");
+const mx=+$("#mp").value;$("#mpv").textContent=mx.toLocaleString();let l=PR.filter(p=>(flt=="all"||p.category==flt||p.gender==flt||(flt=="new"&&p.newArrival)||(flt=="best"&&p.bestSeller))&&(p.salePrice||p.price)<=mx);const s=$("#sort").value;
+if(s=="pa")l.sort((a,b)=>(a.salePrice||a.price)-(b.salePrice||b.price));if(s=="pd")l.sort((a,b)=>(b.salePrice||b.price)-(a.salePrice||a.price));if(s=="n")l.sort((a,b)=>b.createdAt.localeCompare(a.createdAt));
+$("#grid").innerHTML=l.map(card).join("")||"<p>No products match.</p>";obs()}
+$("#sort").onchange=G;$("#mp").oninput=G;
+/* ===== HERO + SHOWCASE ===== */
+function hero(){$("#hw").innerHTML=art(PR.find(p=>p.category=="watches")||PR[0],"Silver")}
+let SW=1,SC="Silver";
+function showcase(){const p=pid(SW)||PR[0];if(!p)return;if(!p.colors.includes(SC))SC=p.colors[0];
+$("#wstage").innerHTML=`<div id="sv">${art(p,SC)}</div>`;
+$("#wspec").innerHTML=Object.entries(p.specifications).slice(0,5).map(([k,v])=>`<div class="spec"><span>${k.toUpperCase()}</span><small>${v}</small></div>`).join("");
+$("#winfo").innerHTML=`<h3 style="font-size:36px">${p.name.replace("JN ","JN<br>")}</h3><p style="color:var(--mut)">${p.description}</p><div class="dots">${p.colors.map(c=>`<button class="dot ${c==SC?"on":""}" aria-label="${c}" title="${c}" style="background:${M[c][1]}" onclick="SC='${c}';showcase()"></button>`).join("")}</div><div class="pr">${fm(cur(p,SC))} · ${SC}</div><div class="btns"><button class="b f" onclick="add(${p.id},0,SC)">Add to Cart</button><button class="b" onclick="pdv(${p.id})">View Product</button></div><div class="btns">${PR.filter(x=>x.category=="watches").map(x=>`<button class="chip ${x.id==SW?"on":""}" onclick="SW=${x.id};showcase()">${x.name.replace("JN ","")}</button>`).join("")}</div>`}
+/* ===== INTERACTION ===== */
+addEventListener("scroll",()=>{const y=scrollY;$("#nav").classList.toggle("s",y>40);document.documentElement.style.setProperty("--sy",Math.min(y/6,70));$("#h1").style.transform=`translateX(${-y*.12}px)`},{passive:true});
+$("#wstage").addEventListener("mousemove",e=>{const r=e.currentTarget.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;$("#sv").style.transform=`rotateY(${x*30}deg) rotateX(${-y*20}deg) scale(1.04)`});
+$("#wstage").addEventListener("mouseleave",()=>$("#sv").style.transform="");
+document.addEventListener("mousemove",e=>{const b=e.target.closest&&e.target.closest(".b");if(b){const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.2}px,${(e.clientY-r.top-r.height/2)*.3}px)`}document.querySelectorAll(".b[style]").forEach(x=>{if(x!==b)x.style.transform=""})});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+function obs(){document.querySelectorAll(".rv:not(.in)").forEach(x=>io.observe(x))}
+function toast(m){const t=$("#t");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),2200)}
+function op(id){document.querySelectorAll(".ov").forEach(o=>o.classList.remove("on"));$("#"+id).classList.add("on");if(id=="search"){$("#sq").focus();S()}}
+function cl(){document.querySelectorAll(".ov").forEach(o=>o.classList.remove("on"))}
+function S(){const q=$("#sq").value.toLowerCase().trim();$("#sr").innerHTML=PR.filter(p=>!q||[p.name,p.category,p.description,p.gender].join(" ").toLowerCase().includes(q)).map(card).join("");obs();document.querySelectorAll("#sr .rv").forEach(x=>x.classList.add("in"))}
+/* ===== WISHLIST / CART ===== */
+function tw(id){WL=WL.includes(id)?WL.filter(x=>x!=id):[...WL,id];save("jn_w",WL);R()}
+function Wl(){op("search");$("#sq").value="";$("#sr").innerHTML=WL.length?WL.map(i=>card(pid(i))).join(""):"<p>Your wishlist is empty.</p>";document.querySelectorAll("#sr .rv").forEach(x=>x.classList.add("in"))}
+function add(id,buy,c,q){const p=pid(id);if(!p||!p.stock)return toast("Out of stock");c=c||p.colors[0];const l=CT.find(x=>x.id==id&&x.c==c);l?l.q+=q||1:CT.push({id,c,q:q||1});save("jn_c",CT);R();if(buy){cl();co()}else{cart(1);toast("Added to cart")}}
+function cart(o){$("#dr").classList.toggle("on",!!o);if(!o)return;const t=tot();$("#drc").innerHTML=`<h3 style="font-size:36px;margin-bottom:10px">Cart</h3>`+(CT.length?CT.map((l,i)=>{const p=pid(l.id);return`<div class="ci">${art(p,l.c)}<div><b>${p.name}</b><br><small>${l.c} · ${fm(cur(p,l.c))}</small><div class="q"><button onclick="qty(${i},-1)">−</button> ${l.q} <button onclick="qty(${i},1)">+</button> <button style="width:auto;border:0;margin-left:8px;font-size:11px" onclick="qty(${i},-99)">Remove</button></div></div><b>${fm(cur(p,l.c)*l.q)}</b></div>`}).join("")+`<p style="margin:20px 0;font-size:18px">Total <b style="float:right">${fm(t)}</b></p><div class="btns"><button class="b f" onclick="cart(0);co()">Checkout</button><button class="b w" onclick="wa()">Order on WhatsApp</button></div>`:"<p>Your cart is empty.</p>")}
+function qty(i,d){CT[i].q+=d;if(CT[i].q<1)CT.splice(i,1);save("jn_c",CT);R();cart(1)}
+const tot=()=>CT.reduce((a,l)=>a+cur(pid(l.id),l.c)*l.q,0);
+/* ===== PRODUCT DETAIL ===== */
+function pdv(id){const p=pid(id);let c=p.colors[0];op("pd");const draw=()=>{$("#pdc").innerHTML=`<div class="pd"><div class="im">${art(p,c)}</div><div><h2>${p.name.replace("JN ","JN<br>")}</h2><div class="pr" style="font-size:24px">${p.salePrice?`<s>${fm(p.price)}</s>`:""}${fm(cur(p,c))}</div><p style="margin:12px 0;max-width:460px">${p.description}</p>${p.colors.length>1?`<div class="dots">${p.colors.map(x=>`<button class="dot ${x==c?"on":""}" style="background:${M[x][1]}" aria-label="${x}" onclick="window._c('${x}')"></button>`).join("")}</div>`:""}${Object.entries(p.specifications).map(([k,v])=>`<div class="spec"><span>${k.toUpperCase()}</span><small>${v}</small></div>`).join("")}${p.fragranceNotes?`<div class="spec"><span>TOP</span><small>${p.fragranceNotes.top}</small></div><div class="spec"><span>HEART</span><small>${p.fragranceNotes.heart}</small></div><div class="spec"><span>BASE</span><small>${p.fragranceNotes.base}</small></div>`:""}<div class="spec"><span>AVAILABILITY</span><small>${p.stock>0?"In stock":"Out of stock"}</small></div><p style="margin-top:16px">Qty <input type="number" id="pq" value="1" min="1" max="${p.stock}" style="width:60px;border-bottom:1px solid"></p><div class="btns"><button class="b f" onclick="add(${p.id},0,'${c}',+$('#pq').value);cl()">Add to Cart</button><button class="b" onclick="add(${p.id},1,'${c}',+$('#pq').value)">Buy Now</button><button class="b w" onclick="wa(${p.id},+$('#pq').value,'${c}')">Order on WhatsApp</button></div></div></div>`};window._c=x=>{c=x;draw()};draw()}
+/* ===== WHATSAPP ===== */
+function wa(id,q,c){let m=`Hello ${CFG.brand}, I would like to order:\n`;if(id){const p=pid(id);m+=`${p.name} (${c}) x${q||1} — ${fm(cur(p,c)*(q||1))}`}else if(CT.length)m+=CT.map(l=>{const p=pid(l.id);return`${p.name} (${l.c}) x${l.q} — ${fm(cur(p,l.c)*l.q)}`}).join("\n")+`\nTotal: ${fm(tot())}`;else m="Hello JN COLLECTION, I have a question.";m+="\nRequest: ";open(`https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent(m)}`,"_blank")}
+/* ===== CHECKOUT ===== */
+function co(){if(!CT.length)return toast("Cart is empty");op("co");$("#coc").innerHTML=`<form class="fm" onsubmit="place(event)">${[["Full Name","text","n"],["Phone Number","tel","p"],["Email","email","e"],["Complete Address","text","a"],["City","text","c"],["Postal Code","text","z"]].map(f=>`<div><label>${f[0]}</label><input type="${f[1]}" name="${f[2]}" required></div>`).join("")}<label>Payment</label>${CFG.payments.map((m,i)=>`<label style="color:inherit"><input type="radio" name="pay" value="${m}" ${i?"":"checked"}> ${m}</label>`).join("")}<p style="font-size:18px">Total <b>${fm(tot())}</b></p><button class="b f" style="width:fit-content">Place Order</button></form>`}
+function place(e){e.preventDefault();const d=Object.fromEntries(new FormData(e.target));const o=load("jn_o",[]);o.push({...d,items:CT,total:tot(),at:new Date().toISOString()});save("jn_o",o);CT=[];save("jn_c",CT);R();$("#coc").innerHTML="<h3 style='font-size:40px'>Thank you.</h3><p>Your order has been recorded. (Front-end demo: no payment taken and no server is connected yet.)</p>"}
+/* ===== ADMIN (#admin) — client-side gate only; use a real backend before launch ===== */
+function admin(){if(location.hash!="#admin")return;const k=prompt("Admin passcode");if(k!==CFG.adminPass)return toast("Access denied");op("ad");A()}
+addEventListener("hashchange",admin);
+function A(){const f=["name","category","price","salePrice","stock"],fl=["featured","bestSeller","newArrival"];$("#adc").innerHTML=`<button class="b" onclick="newP()">+ Add product</button> <button class="b" onclick="if(confirm('Reset all products?')){PR=DEF;save('jn_p',PR);R();A()}">Reset</button><table><tr>${[...f,"image URL",...fl,""].map(h=>`<th>${h}</th>`).join("")}</tr>${PR.map(p=>`<tr>${f.map(k=>`<td><input value="${p[k]}" onchange="ed(${p.id},'${k}',this.value)"></td>`).join("")}<td><input value="${(p.images||[])[0]||""}" onchange="ed(${p.id},'images',this.value)"></td>${fl.map(k=>`<td><input type="checkbox" ${p[k]?"checked":""} onchange="ed(${p.id},'${k}',this.checked)"></td>`).join("")}<td><button onclick="if(confirm('Delete?')){PR=PR.filter(x=>x.id!=${p.id});save('jn_p',PR);R();A()}">✕</button></td></tr>`).join("")}</table>`}
+function ed(id,k,v){const p=pid(id);p[k]=["price","salePrice","stock"].includes(k)?+v:k=="images"?(v?[v]:[]):v;save("jn_p",PR);R()}
+function newP(){const id=Math.max(...PR.map(p=>p.id))+1;PR.push({...W(id,"JN New Product","Description",10000,0,["Silver"],0,0,1),createdAt:new Date().toISOString().slice(0,10)});save("jn_p",PR);R();A()}
+/* ===== TESTIMONIALS (sample copy — replace) ===== */
+$("#tg").innerHTML=["Beautiful finishing and even better in person.","Packaging, presentation and product quality were excellent.","JN Collection has a very premium feel."].map(t=>`<div class="rv">“${t}”<small>SAMPLE — REPLACE WITH A REAL REVIEW</small></div>`).join("");
+addEventListener("keydown",e=>{if(e.key=="Escape"){cl();cart(0)}});
+R();admin();
+</script></body></html>
